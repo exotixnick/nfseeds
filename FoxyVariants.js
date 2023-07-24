@@ -1,4 +1,3 @@
-<script>    
     var currency_symbol = '$';
     var modifier_text_summary = true;
 
@@ -27,4 +26,3 @@ $(document).ready(function() {
         });
         $('input[name="quantity"]').val("1").attr("min", "1");
     });
-</script>
