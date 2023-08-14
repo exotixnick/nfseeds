@@ -75,7 +75,7 @@ $(".product_slider-component").each(function (index) {
 
 // Product Page Image Slider
 
-$(".product-image_slider-component").each(function (index) {
+$(".product-page_slider-component").each(function (index) {
   let loopMode = false;
   if ($(this).attr("loop-mode") === "true") {
     loopMode = true;
