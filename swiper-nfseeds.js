@@ -75,7 +75,7 @@ $(".product_slider-component").each(function (index) {
 
 // Product Page Image Slider
 
-$(".product-page_slider-component").each(function (index) {
+$(".product-page_slider-main").each(function (index) {
   let loopMode = false;
   if ($(this).attr("loop-mode") === "true") {
     loopMode = true;
@@ -84,7 +84,7 @@ $(".product-page_slider-component").each(function (index) {
   if ($(this).attr("slider-duration") !== undefined) {
     sliderDuration = +$(this).attr("slider-duration");
   }
-  const swiper = new Swiper($(this).find(".swiper")[0], {
+  const swiper = new Swiper($(this).find(".swiper.is-slider-main")[0], {
     speed: sliderDuration,
     loop: loopMode,
     autoHeight: false,
