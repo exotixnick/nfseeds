@@ -5,7 +5,7 @@ $(".product_slider-component").each(function (index) {
   if ($(this).attr("loop-mode") === "true") {
     loopMode = true;
   }
-  let sliderDuration = 300;
+  let sliderDuration = 420;
   if ($(this).attr("slider-duration") !== undefined) {
     sliderDuration = +$(this).attr("slider-duration");
   }
