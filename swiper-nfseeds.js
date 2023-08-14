@@ -9,7 +9,7 @@ $(".product_slider-component").each(function (index) {
   if ($(this).attr("slider-duration") !== undefined) {
     sliderDuration = +$(this).attr("slider-duration");
   }
-  const swiper = new Swiper($(this).find(".swiper")[0], {
+  const swiper = new Swiper($(this).find(".swiper.product_collection-wrapper")[0], {
     speed: sliderDuration,
     loop: loopMode,
     autoHeight: false,
